@@ -1,26 +1,30 @@
 # 04-portfolio-site-v1
 
-✨ Professional Repository Showcase Template
-
-## Live Deployments
-- Netlify: https://04-portfolio-site-v1-mkazi.netlify.app
-- GitHub Pages: https://mk-knight23.github.io/04-portfolio-site-v1/
-
-Status: 🟢 Live
-Last Updated: 2026-01-21T13:54:00+05:30
+✨ Evolution of a digital identity. This portfolio iteration focuses on clean minimalist architecture and high-fidelity typography.
 
 ## Features
-- 📱 Mobile Responsive
-- ⚡ Fast Performance
-- 🎨 Modern UI/UX
+- 🖋️ Minimalist Type-Focused UI
+- 🎨 Sophisticated Gray/Dark Space Theme
+- 📱 Responsive Multi-Resolution Support
+- ⚛️ Powered by React 18
+- ⚡ Efficient Build Pipeline with Vite 6
+
+## Tech Stack
+- **Frontend**: React 18, Tailwind CSS v4
+- **Build Tool**: Vite 6
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
 
 ## Quick Start
 ```bash
-git clone https://github.com/mk-knight23/04-portfolio-site-v1.git
-cd 04-portfolio-site-v1
 npm install
 npm run dev
 ```
 
-## License
-MIT
+## Documentation
+Additional technical details can be found in the [docs/](docs/) directory.
+
+## Live Deployment
+GitHub Pages: [Pending]
+Status: 🟡 Initializing Pipeline
+Last Updated: 2026-01-21

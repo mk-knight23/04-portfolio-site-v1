@@ -65,9 +65,9 @@ function App() {
     return (
         <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
             {/* Sidebar */}
-            <aside className="w-full md:w-80 bg-slate-900 text-white p-8 md:fixed md:h-full flex flex-col items-center">
-                <h1 className="text-2xl font-bold mb-8 text-center bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-                    MK KNIGHT'S BLOG
+            <aside className="w-full md:w-80 bg-slate-950 text-slate-50 p-8 md:fixed md:h-full flex flex-col items-center border-r border-white/5 selection:bg-primary/30">
+                <h1 className="text-2xl font-black mb-8 text-center bg-gradient-to-br from-primary via-white to-secondary bg-clip-text text-transparent tracking-tighter">
+                    MK.DEV_LOG
                 </h1>
 
                 <div className="mb-8 text-center">
@@ -99,19 +99,22 @@ function App() {
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 md:ml-80">
-                <header className="bg-white border-b border-gray-200 py-16 px-8 text-center">
-                    <h2 className="text-4xl font-extrabold text-gray-900 mb-4">DevBlog - Developer Focused Template</h2>
-                    <p className="text-gray-600 text-lg mb-8">Welcome to my blog. Subscribe and get my latest posts in your inbox.</p>
-                    <div className="max-w-md mx-auto flex gap-2">
-                        <input
-                            type="email"
-                            placeholder="Enter email"
-                            className="flex-1 bg-gray-100 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none"
-                        />
-                        <button className="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all">
-                            Subscribe
-                        </button>
+            <main className="flex-1 md:ml-80 bg-[#f8fafc]">
+                <header className="bg-white border-b border-slate-100 py-20 px-8 text-center relative overflow-hidden">
+                    <div className="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+                    <div className="max-w-3xl mx-auto relative z-10">
+                        <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">Insightful Content for Modern Developers</h2>
+                        <p className="text-slate-500 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Join 10k+ developers and get the latest deep-dives on React, AI, and Cloud Architecture.</p>
+                        <div className="max-w-md mx-auto flex gap-3">
+                            <input
+                                type="email"
+                                placeholder="name@email.com"
+                                className="flex-1 bg-slate-50 border border-slate-200 rounded-2xl px-5 py-4 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all shadow-sm"
+                            />
+                            <button className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 active:scale-95 transition-all shadow-xl shadow-slate-900/10">
+                                Join Now
+                            </button>
+                        </div>
                     </div>
                 </header>
 
@@ -136,7 +139,7 @@ function App() {
                                     <span className="flex items-center gap-1"><MessageSquare className="w-3 h-3" /> {post.comments} comments</span>
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                <h3 className="text-2xl font-black text-slate-900 mb-3 group-hover:text-primary transition-colors leading-snug">
                                     {post.title}
                                 </h3>
 
