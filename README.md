@@ -1,5 +1,11 @@
 # Kazi Musharraf — Backend Developer
 
+## 🚀 Live Demo
+
+This portfolio is deployed to multiple platforms:
+
+
+
 **Building Scalable APIs & Systems with Java Spring Boot, Node.js & PostgreSQL**
 
 ---

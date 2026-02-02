@@ -1,50 +1,674 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Kazi Musharraf — Backend Systems Architect (AI-VIBE-ECOSYSTEM v2.0)</title>
-    <meta name="title" content="Kazi Musharraf — Backend Systems Architect (AI-VIBE-ECOSYSTEM v2.0)">
-    <meta name="description"
-        content="Backend Systems Architect for the AI-VIBE-ECOSYSTEM v2.0. Specializing in automation logic, security-first architectures, and multi-agent API orchestration.">
-    <meta name="keywords"
-        content="AI-VIBE-ECOSYSTEM v2.0, AI-VIBE-Automation, AI-VIBE-CLI, backend systems, node.js, security, microservices, kazi musharraf">
+    <title>Kazi Musharraf — Backend Systems Architect</title>
+    <meta name="title" content="Kazi Musharraf — Backend Systems Architect">
+    <meta name="description" content="Backend Systems Architect specializing in APIs, databases, and infrastructure. 60+ projects spanning Firebase, Django, Flask, and enterprise systems.">
+    <meta name="keywords" content="backend engineer, API design, databases, infrastructure, scalability, node.js, python, firebase, django, flask">
     <meta name="author" content="Kazi Musharraf">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mk-knight23.github.io/04-portfolio-backend/">
-    <meta property="og:title" content="Kazi Musharraf — Backend Systems Architect (AI-VIBE-ECOSYSTEM v2.0)">
-    <meta property="og:description"
-        content="Architecting secure automation layers and multi-agent APIs for the AI-VIBE-ECOSYSTEM v2.0.">
+    <meta property="og:title" content="Kazi Musharraf — Backend Systems Architect">
+    <meta property="og:description" content="Backend Systems Architect specializing in APIs, databases, and infrastructure.">
     <meta property="og:image" content="https://mk-knight23.github.io/04-portfolio-backend/og-image.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://mk-knight23.github.io/04-portfolio-backend/">
-    <meta name="twitter:title" content="Kazi Musharraf — Backend Systems Architect (AI-VIBE-ECOSYSTEM v2.0)">
-    <meta name="twitter:description"
-        content="Engineering the future of secure agentic backends and automated workflows.">
+    <meta name="twitter:title" content="Kazi Musharraf — Backend Systems Architect">
+    <meta name="twitter:description" content="Backend Systems Architect specializing in APIs, databases, and infrastructure.">
 
-    <!-- Favicon - Database/Server Icon for Backend -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='20' y='15' width='60' height='20' rx='5' fill='%235c4033' stroke='%23382516' stroke-width='3'/><rect x='20' y='40' width='60' height='20' rx='5' fill='%23785548' stroke='%23382516' stroke-width='3'/><rect x='20' y='65' width='60' height='20' rx='5' fill='%239c7a6b' stroke='%23382516' stroke-width='3'/><ellipse cx='50' cy='15' rx='30' ry='10' fill='%23a68a64' stroke='%23382516' stroke-width='3'/><ellipse cx='50' cy='40' rx='30' ry='10' fill='%23a68a64' stroke='%23382516' stroke-width='3'/><ellipse cx='50' cy='65' rx='30' ry='10' fill='%23a68a64' stroke='%23382516' stroke-width='3'/></svg>">
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Theme Color -->
     <meta name="theme-color" content="#fafaf9">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-stone-50 text-stone-900">
-    <a href="#main"
-        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-stone-900 focus:text-white focus:rounded-lg">
-        Skip to main
-    </a>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-</body>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-mark">KM</span>
+                <span class="nav-logo-text">Kazi Musharraf</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-meta">
+                    <span class="hero-label">Backend Systems Architect</span>
+                    <span class="hero-separator">—</span>
+                    <span class="hero-location">Hyderabad, India</span>
+                </div>
+                <h1 class="hero-title">
+                    Designing data systems<br>
+                    <span class="hero-title-accent">that scale with purpose</span>
+                </h1>
+                <p class="hero-description">
+                    I architect backend infrastructure, APIs, and database systems that power
+                    modern applications. From Firebase cloud functions to Django REST frameworks,
+                    I build the invisible foundation that makes software reliable.
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">60</span>
+                        <span class="hero-stat-label">Projects</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">8</span>
+                        <span class="hero-stat-label">Backend Systems</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number">5+</span>
+                        <span class="hero-stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#featured" class="btn btn-primary">View Featured Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span class="hero-scroll-text">Scroll</span>
+                <span class="hero-scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <header class="section-header">
+                            <span class="section-label">01 — About</span>
+                            <h2 class="section-title">The architecture behind the interface</h2>
+                        </header>
+                        <div class="about-text">
+                            <p class="lead">
+                                I'm a Backend Systems Architect at Wipro, where I engineer the data layers
+                                and API infrastructure that enterprise applications depend on.
+                            </p>
+                            <p>
+                                My work lives in the space between database schemas and REST endpoints—designing
+                                systems that handle scale without sacrificing clarity. I believe the best backend
+                                code reads like documentation: explicit, predictable, and self-describing.
+                            </p>
+                            <p>
+                                Through 60+ projects, I've developed deep expertise in Firebase ecosystems,
+                                Python frameworks, and Node.js microservices. Each system I build prioritizes
+                                data integrity, API consistency, and operational reliability.
+                            </p>
+                        </div>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <span class="highlight-number">01</span>
+                                <h3 class="highlight-title">API Design</h3>
+                                <p class="highlight-text">RESTful and GraphQL APIs with comprehensive documentation and versioning strategies.</p>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">02</span>
+                                <h3 class="highlight-title">Database Architecture</h3>
+                                <p class="highlight-text">Schema design, query optimization, and data modeling for relational and NoSQL systems.</p>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-number">03</span>
+                                <h3 class="highlight-title">Cloud Infrastructure</h3>
+                                <p class="highlight-text">Firebase, AWS, and serverless architectures with automated deployment pipelines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="featured" class="featured">
+            <div class="section-container">
+                <header class="section-header section-header--centered">
+                    <span class="section-label">02 — Featured Work</span>
+                    <h2 class="section-title">Backend systems & infrastructure</h2>
+                    <p class="section-description">Eight projects demonstrating API design, database architecture, and cloud infrastructure expertise.</p>
+                </header>
+
+                <div class="featured-grid">
+                    <!-- Project 1: Firebase File Uploader -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Cloud Storage</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">Firebase File Uploader</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Secure cloud storage system with Firebase Storage integration. Features chunked uploads,
+                            progress tracking, file validation, and access control rules.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">Firebase Storage</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Security Rules</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/tool-firebase-file-uploader" class="project-link" target="_blank" rel="noopener">View Source</a>
+                            <a href="https://mk-knight23.github.io/tool-firebase-file-uploader/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Firebase Image Uploader -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Media Processing</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">Firebase Image Uploader</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Image handling pipeline with client-side compression, format conversion,
+                            and Firebase Storage integration. Includes thumbnail generation and metadata extraction.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Image Processing</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/tool-firebase-image-uploader" class="project-link" target="_blank" rel="noopener">View Source</a>
+                            <a href="https://mk-knight23.github.io/tool-firebase-image-uploader/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: React Image Uploader -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Full Stack</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">React Image Uploader</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Complete upload ecosystem with React frontend and cloud backend.
+                            Features drag-and-drop interface, upload queues, and real-time progress indicators.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/tool-react-image-uploader" class="project-link" target="_blank" rel="noopener">View Source</a>
+                            <a href="https://mk-knight23.github.io/tool-react-image-uploader/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Django Starter -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Web Framework</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">Django Starter Template</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Production-ready Django foundation with user authentication, admin customization,
+                            database models, and REST API endpoints via Django REST Framework.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">DRF</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/starter-django" class="project-link" target="_blank" rel="noopener">View Source</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Flask Starter -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Micro Framework</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">Flask Microservices Starter</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Lightweight Flask architecture for microservices and API development.
+                            Includes JWT authentication, SQLAlchemy ORM, and blueprint-based modularity.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/starter-flask" class="project-link" target="_blank" rel="noopener">View Source</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Enterprise Input System -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Enterprise UI</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">Enterprise Input System</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Complex form architecture with validation pipelines, field dependencies,
+                            and data serialization. Designed for enterprise data entry workflows.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Form Validation</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/web-enterprise-input" class="project-link" target="_blank" rel="noopener">View Source</a>
+                            <a href="https://mk-knight23.github.io/web-enterprise-input/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: AI Research Platform -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Data Platform</span>
+                                <span class="project-card-year">2024</span>
+                            </div>
+                            <h3 class="project-card-title">AI Research Platform</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Research data management system with document processing, citation tracking,
+                            and collaborative annotation features for AI research workflows.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Data Processing</span>
+                            <span class="tech-tag">Document API</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/web-ai-research" class="project-link" target="_blank" rel="noopener">View Source</a>
+                            <a href="https://mk-knight23.github.io/web-ai-research/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: AI-VIBE-Automation -->
+                    <article class="project-card project-card--featured">
+                        <div class="project-card-header">
+                            <div class="project-card-meta">
+                                <span class="project-card-category">Automation Engine</span>
+                                <span class="project-card-year">2025</span>
+                            </div>
+                            <h3 class="project-card-title">AI-VIBE-Automation</h3>
+                        </div>
+                        <p class="project-card-description">
+                            Workflow orchestration engine for automated task execution and cross-platform
+                            agent synchronization. Features event-driven architecture and state management.
+                        </p>
+                        <div class="project-card-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Event-Driven</span>
+                            <span class="tech-tag">Agent Systems</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/mk-knight23/AI-VIBE-Automation" class="project-link" target="_blank" rel="noopener">View Source</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-label">03 — All Projects</span>
+                    <h2 class="section-title">Complete project archive</h2>
+                    <p class="section-description">60 projects across web applications, games, tools, and starter templates.</p>
+                </header>
+
+                <div class="projects-table-container">
+                    <table class="projects-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Project</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Portfolio — DevTools</td><td>Portfolio</td><td>CLI Aesthetic</td><td><a href="https://mk-knight23.github.io/01-portfolio-devtools/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Fullstack</td><td>Portfolio</td><td>Product-Led</td><td><a href="https://mk-knight23.github.io/02-portfolio-fullstack/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Frontend</td><td>Portfolio</td><td>Motion-First</td><td><a href="https://mk-knight23.github.io/03-portfolio-frontend/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Backend</td><td>Portfolio</td><td>Editorial</td><td><a href="https://mk-knight23.github.io/04-portfolio-backend/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Frontend AI</td><td>Portfolio</td><td>AI Lab</td><td><a href="https://mk-knight23.github.io/05-portfolio-frontend-ai/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Senior Frontend</td><td>Portfolio</td><td>Swiss Minimal</td><td><a href="https://mk-knight23.github.io/06-portfolio-senior-frontend/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — Indie SaaS</td><td>Portfolio</td><td>Indie Hacker</td><td><a href="https://mk-knight23.github.io/07-portfolio-indie-saas/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Portfolio — AI Automation</td><td>Portfolio</td><td>Systems Flow</td><td><a href="https://mk-knight23.github.io/08-portfolio-ai-automation/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Geographic Explorer</td><td>Web App</td><td>Data Viz</td><td><a href="https://mk-knight23.github.io/09-web-geographic-explorer/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Time Display</td><td>Web App</td><td>Utility</td><td><a href="https://mk-knight23.github.io/10-web-time-display/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Keyboard Practice</td><td>Web App</td><td>Interactive</td><td><a href="https://mk-knight23.github.io/11-web-keyboard-practice/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Editorial Blog</td><td>Web App</td><td>Content</td><td><a href="https://mk-knight23.github.io/12-web-editorial-blog/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Brutalist Content</td><td>Web App</td><td>Experimental</td><td><a href="https://mk-knight23.github.io/13-web-brutalist-content/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>AI Research</td><td>Web App</td><td>Data Platform</td><td><a href="https://mk-knight23.github.io/14-web-ai-research/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Luxury Boutique</td><td>Web App</td><td>E-commerce</td><td><a href="https://mk-knight23.github.io/15-web-luxury-boutique/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Editorial Layouts</td><td>Web App</td><td>Typography</td><td><a href="https://mk-knight23.github.io/16-web-editorial-layouts/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Culinary Discovery</td><td>Web App</td><td>Content</td><td><a href="https://mk-knight23.github.io/17-web-culinary-discovery/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Atmospheric Dashboard</td><td>Web App</td><td>Dashboard</td><td><a href="https://mk-knight23.github.io/18-web-atmospheric-dashboard/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Viral Creator</td><td>Web App</td><td>Social Tool</td><td><a href="https://mk-knight23.github.io/19-web-viral-creator/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Career Navigator</td><td>Web App</td><td>Tool</td><td><a href="https://mk-knight23.github.io/20-web-career-navigator/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Enterprise Input</td><td>Web App</td><td>Forms</td><td><a href="https://mk-knight23.github.io/21-web-enterprise-input/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Professional Showcase</td><td>Web App</td><td>Portfolio</td><td><a href="https://mk-knight23.github.io/22-web-professional-showcase/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Financial Printing</td><td>Web App</td><td>Data Viz</td><td><a href="https://mk-knight23.github.io/23-web-financial-printing/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Sketch Studio</td><td>Web App</td><td>Creative Tool</td><td><a href="https://mk-knight23.github.io/24-web-sketch-studio/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Neon Highway</td><td>Game</td><td>Arcade</td><td><a href="https://mk-knight23.github.io/25-game-neon-highway/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Retro Vault</td><td>Game</td><td>Retro</td><td><a href="https://mk-knight23.github.io/26-game-retro-vault/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>World Net</td><td>Game</td><td>Strategy</td><td><a href="https://mk-knight23.github.io/27-game-world-net/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Squid Net</td><td>Game</td><td>Arcade</td><td><a href="https://mk-knight23.github.io/28-game-squid-net/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Snake Net</td><td>Game</td><td>Classic</td><td><a href="https://mk-knight23.github.io/29-game-snake-net/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Dragon Surge</td><td>Game</td><td>Fantasy</td><td><a href="https://mk-knight23.github.io/30-game-dragon-surge/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Maze Net</td><td>Game</td><td>Puzzle</td><td><a href="https://mk-knight23.github.io/31-game-maze-net/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Flux Arcade</td><td>Game</td><td>Multi-game</td><td><a href="https://mk-knight23.github.io/32-game-flux-arcade/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Aptitude Nexus</td><td>Game</td><td>Quiz</td><td><a href="https://mk-knight23.github.io/33-game-aptitude-nexus/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Sigma Nexus</td><td>Game</td><td>Puzzle</td><td><a href="https://mk-knight23.github.io/34-game-sigma-nexus/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>QuizFlow PDF Generator</td><td>Tool</td><td>PDF Engine</td><td><a href="https://mk-knight23.github.io/35-tool-quizflow-pdf-quiz-generator/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>VaultPass Password Gen</td><td>Tool</td><td>Security</td><td><a href="https://mk-knight23.github.io/36-tool-vaultpass-secure-password-generator/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Text to Speech</td><td>Tool</td><td>Audio API</td><td><a href="https://mk-knight23.github.io/37-tool-text-to-speech/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Firebase File Uploader</td><td>Tool</td><td>Cloud Storage</td><td><a href="https://mk-knight23.github.io/38-tool-firebase-file-uploader/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Firebase Image Uploader</td><td>Tool</td><td>Media Processing</td><td><a href="https://mk-knight23.github.io/39-tool-firebase-image-uploader/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>React Image Uploader</td><td>Tool</td><td>Full Stack</td><td><a href="https://mk-knight23.github.io/40-tool-react-image-uploader/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Firebase Auth</td><td>Tool</td><td>Authentication</td><td><a href="https://mk-knight23.github.io/41-tool-firebase-auth/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Facebook Login UI</td><td>Tool</td><td>UI Component</td><td><a href="https://mk-knight23.github.io/42-tool-facebook-login-ui/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Agency Website Clone</td><td>Tool</td><td>Frontend</td><td><a href="https://mk-knight23.github.io/43-tool-agency-website-clone/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>GitHub Desktop Guide</td><td>Tool</td><td>Documentation</td><td><a href="https://mk-knight23.github.io/44-tool-github-desktop-guide/" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>React Vercel Starter</td><td>Starter</td><td>Boilerplate</td><td><a href="https://github.com/mk-knight23/45-starter-react-vercel" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Ionic React Starter</td><td>Starter</td><td>Mobile</td><td><a href="https://github.com/mk-knight23/46-starter-ionic-react" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Django Starter</td><td>Starter</td><td>Web Framework</td><td><a href="https://github.com/mk-knight23/47-starter-django" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Flask Starter</td><td>Starter</td><td>Micro Framework</td><td><a href="https://github.com/mk-knight23/48-starter-flask" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>JAMstack Blog</td><td>Starter</td><td>Static Site</td><td><a href="https://github.com/mk-knight23/49-starter-jamstack-blog" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>React Boilerplate</td><td>Starter</td><td>Boilerplate</td><td><a href="https://github.com/mk-knight23/50-starter-react-boilerplate" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>CodeSandbox Starter</td><td>Starter</td><td>Development</td><td><a href="https://github.com/mk-knight23/51-starter-codesandbox" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Hugo Blog</td><td>Starter</td><td>Static Site</td><td><a href="https://github.com/mk-knight23/52-starter-hugo-blog" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Docusaurus Docs</td><td>Starter</td><td>Documentation</td><td><a href="https://github.com/mk-knight23/53-starter-docusaurus-docs" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Gatsby Blog</td><td>Starter</td><td>Static Site</td><td><a href="https://github.com/mk-knight23/54-starter-gatsby-blog" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Angular Web Starter</td><td>Starter</td><td>Framework</td><td><a href="https://github.com/mk-knight23/55-starter-angular-web" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Electron Desktop</td><td>Starter</td><td>Desktop</td><td><a href="https://github.com/mk-knight23/56-starter-electron-desktop" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Python Practice</td><td>Starter</td><td>Learning</td><td><a href="https://github.com/mk-knight23/57-starter-python-practice" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Python Examples</td><td>Starter</td><td>Reference</td><td><a href="https://github.com/mk-knight23/58-starter-python-examples" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>Repo Demo</td><td>Starter</td><td>Template</td><td><a href="https://github.com/mk-knight23/59-starter-repo-demo" target="_blank" rel="noopener">View</a></td></tr>
+                            <tr><td>CADWork Internship</td><td>Starter</td><td>Archive</td><td><a href="https://github.com/mk-knight23/60-starter-cadwork-internship" target="_blank" rel="noopener">View</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-label">04 — Technical Expertise</span>
+                    <h2 class="section-title">Skills & technologies</h2>
+                </header>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend Development</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-context">Express, Fastify, REST APIs</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-context">Django, Flask, FastAPI</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Firebase</span>
+                                <span class="skill-context">Auth, Storage, Functions, Firestore</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">API Design</span>
+                                <span class="skill-context">REST, GraphQL, OpenAPI</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Databases</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-context">Schema design, optimization</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-context">Document modeling, aggregation</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Redis</span>
+                                <span class="skill-context">Caching, session storage</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Firestore</span>
+                                <span class="skill-context">NoSQL, real-time sync</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Infrastructure</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Cloud Platforms</span>
+                                <span class="skill-context">AWS, GCP, Firebase, Vercel</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Containerization</span>
+                                <span class="skill-context">Docker, Docker Compose</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">CI/CD</span>
+                                <span class="skill-context">GitHub Actions, automated deploys</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Monitoring</span>
+                                <span class="skill-context">Logging, alerting, tracing</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend Integration</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">
+                                <span class="skill-name">React</span>
+                                <span class="skill-context">Hooks, Context, data fetching</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-context">Type safety, API contracts</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Data Fetching</span>
+                                <span class="skill-context">SWR, React Query, fetch</span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Form Handling</span>
+                                <span class="skill-context">Validation, submission, state</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-label">05 — Resume</span>
+                    <h2 class="section-title">Professional background</h2>
+                </header>
+
+                <div class="resume-grid">
+                    <div class="resume-main">
+                        <div class="resume-section">
+                            <h3 class="resume-section-title">Experience</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <h4 class="resume-item-title">Project Engineer (TURBO)</h4>
+                                    <span class="resume-item-date">2022 — Present</span>
+                                </div>
+                                <p class="resume-item-company">Wipro</p>
+                                <p class="resume-item-description">
+                                    Architecting backend systems and API infrastructure for enterprise clients.
+                                    Designing database schemas, implementing RESTful services, and optimizing
+                                    system performance. Leading technical decisions on cloud infrastructure
+                                    and deployment strategies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3 class="resume-section-title">Education</h3>
+                            <div class="resume-item">
+                                <div class="resume-item-header">
+                                    <h4 class="resume-item-title">B.Tech Computer Science & Engineering</h4>
+                                    <span class="resume-item-date">2022</span>
+                                </div>
+                                <p class="resume-item-description">
+                                    Focus on software engineering, database systems, and distributed computing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-sidebar">
+                        <div class="resume-section">
+                            <h3 class="resume-section-title">Core Competencies</h3>
+                            <ul class="competency-list">
+                                <li>API Architecture</li>
+                                <li>Database Design</li>
+                                <li>Cloud Infrastructure</li>
+                                <li>System Integration</li>
+                                <li>Performance Optimization</li>
+                                <li>Technical Documentation</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-section">
+                            <h3 class="resume-section-title">Certifications</h3>
+                            <ul class="certification-list">
+                                <li>Firebase Cloud Developer</li>
+                                <li>AWS Cloud Practitioner</li>
+                                <li>MongoDB Database Administrator</li>
+                            </ul>
+                        </div>
+
+                        <a href="/resume.pdf" class="btn btn-primary btn-full" download>Download Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <header class="section-header">
+                            <span class="section-label">06 — Contact</span>
+                            <h2 class="section-title">Let's discuss your next system</h2>
+                        </header>
+                        <p class="contact-description">
+                            I'm available for backend architecture consulting, API design projects,
+                            and full-stack development engagements. Based in Hyderabad, open to remote collaboration.
+                        </p>
+                        <div class="contact-info">
+                            <a href="mailto:mk.knight970@gmail.com" class="contact-link contact-link--large">
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">mk.knight970@gmail.com</span>
+                            </a>
+                            <a href="tel:+919765490536" class="contact-link">
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-value">+91 97654 90536</span>
+                            </a>
+                            <div class="contact-link">
+                                <span class="contact-link-label">Location</span>
+                                <span class="contact-link-value">Hyderabad, India</span>
+                            </div>
+                            <div class="contact-link">
+                                <span class="contact-link-label">Availability</span>
+                                <span class="contact-link-value contact-link-value--available">Open to opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3 class="contact-social-title">Connect Online</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/mk-knight23" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-link-name">GitHub</span>
+                                <span class="social-link-handle">@mk-knight23</span>
+                            </a>
+                            <a href="https://linkedin.com/in/kazi-musharraf-0674871a4" class="social-link" target="_blank" rel="noopener">
+                                <span class="social-link-name">LinkedIn</span>
+                                <span class="social-link-handle">/in/kazi-musharraf</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">© 2025 Kazi Musharraf. All rights reserved.</p>
+            <p class="footer-location">Backend Systems Architect — Hyderabad, India</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
