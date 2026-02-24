@@ -1,173 +1,89 @@
-# Kazi Musharraf — Backend Developer
+# 04 Portfolio Backend — Kazi Musharraf
 
-## 🚀 Live Demo
+> **Editorial portfolio showcasing API design and systems architecture.**
+> Built for engineering teams and technical architects.
 
-This portfolio is deployed to multiple platforms:
-
-
-
-**Building Scalable APIs & Systems with Java Spring Boot, Node.js & PostgreSQL**
-
----
-
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-222222?style=for-the-badge&logo=github)](https://mk-knight23.github.io/04-portfolio-site-v1/)
-[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)](https://04-portfolio-backend.vercel.app/)
-[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://04-portfolio-backend.netlify.app/)
-[![Source](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/04-portfolio-backend)
+[![Live Site](https://img.shields.io/badge/Live%20Site-Backend-059669?style=for-the-badge&logo=firefox&logoColor=white)](https://mk-knight-backend.web.app)
+[![GitHub](https://img.shields.io/badge/Source-Code-181717?style=for-the-badge&logo=github)](https://github.com/mk-knight23/04-portfolio-backend)
+[![Ecosystem](https://img.shields.io/badge/60%20Projects-Ecosystem-10b981?style=for-the-badge)](https://www.mkazi.live)
 
 ---
 
-## About
+## What Is This?
 
-Backend Developer specializing in Java Spring Boot, Node.js, PostgreSQL, MongoDB, REST APIs, and scalable system architecture. Currently building the **AI-VIBE-ECOSYSTEM v2.0** — a multi-product, agent-driven developer platform.
+This is **Portfolio #04 — Backend**, an editorial-style portfolio designed for engineering teams. It showcases my work in API design, database architecture, and systems thinking through a clean, content-focused interface.
 
----
-
-## 🏗️ What I’m Building
-
-I am architecting **AI-VIBE-ECOSYSTEM v2.0**, a human-first developer platform where agents don't just write code—they collaborate within a unified system architecture. This ecosystem exists to bridge the gap between high-level intent and production-grade execution by treating AI as a first-class citizen in the developer's toolkit. This portfolio represents the **Backend lens** into that system, focusing on the distributed services and data orchestration that power agentic reasoning.
+One of **eight specialized portfolio experiences**.
 
 ---
 
-## 🧩 The AI-VIBE Products (Backend Focus)
+## The Story: Invisible Architecture
 
-While the ecosystem spans 5 products, my work here focuses on the core services and infrastructure:
+### The Backend Philosophy
 
-- **AI-VIBE-Automation**: The primary workflow orchestration engine. I work on background task execution, agentic sync, and data persistence layers.
-- **AI-VIBE-CLI**: The terminal-based agent portal. I focus on the multi-agent orchestration logic, secure command execution, and multi-LLM routing.
-- **AI-VIBE-ChatWeb**: Providing the high-availability API layer for real-time human-agent collaboration.
-- *Integrations*: Deeply connected with **VSCode** and **WebBuilder** to ensure that data flows seamlessly across the entire agent lifecycle.
+The best backend code is **invisible** — it just works, scales, and stays reliable.
 
----
+```
+User Request → API Gateway → Service Layer → Database → Response
+                    ↓              ↓              ↓
+               Rate Limiting   Business Logic  Optimization
+               Authentication  Validation      Indexing
+```
 
-## ⚙️ How This Portfolio Fits the Ecosystem
+### The 60 Projects Backend Evolution
 
-This portfolio demonstrates the **Infrastructure & Scale** layer of the AI-VIBE-ECOSYSTEM. It showcases how we build robust backend services that handle complex agentic requests with low latency and high reliability. It aligns with the **Automation → CLI → API** workflow, where agentic intent is processed, executed, and synced across the whole platform.
-
----
-
-## 🤖 Agents & Workflows I Use
-
-In building this ecosystem, I leverage specialized agent workflows:
-- **System Architect**: Mapping out microservices and data flows before a single line of code is written.
-- **Security & Auditor**: Ensuring that every agentic command and data access follows strict RBAC and security boundaries.
-- **Performance Tuner**: Analyzing agent execution logs and database queries to ensure maximum system throughput.
-
----
-
-## 💎 Design & Quality Principles
-
-- **Human-First Development**: Backend complexity should be hidden behind clean, predictable APIs that agents and humans can use with confidence.
-- **Scale by Design**: Architecting for the next 10x growth from day one.
-- **Reliability as a Feature**: Striving for zero-downtime and robust failure recovery in agentic workflows.
-- **Tradeoffs Accepted**: Choosing React for this portfolio to demonstrate that backend engineers can also build polished, functional interfaces for system monitoring and documentation.
-
----
-
-
-## Features
-
-- **Resume & Cover Letter Sections** — Complete professional history and 3-6 month impact plan
-- **VIBE Ecosystem Showcase** — Multi-product AI developer platform overview
-- **Clean Interface** — Stone/amber color scheme with smooth animations
-- **Contact & Social Links** — Direct access to email, phone, GitHub, and LinkedIn
+| Phase | Focus | Technologies |
+|-------|-------|--------------|
+| **Static Files** | Basic hosting | HTML/CSS |
+| **Serverless** | Functions as a service | Firebase, Vercel |
+| **API Development** | RESTful endpoints | Node.js, Python |
+| **Database Design** | Schema optimization | PostgreSQL, MongoDB |
+| **System Architecture** | Microservices, scaling | Docker, Kubernetes |
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React 19, TypeScript, Framer Motion
-- **Styling:** Tailwind CSS v4 (stone/amber theme)
-- **Build:** Vite 6.x
-- **Deployment:** GitHub Pages, Vercel, Netlify
+| Category | Technology |
+|----------|------------|
+| **Frontend** | HTML5, CSS3 |
+| **Styling** | Custom CSS (editorial theme) |
+| **Typography** | Newsreader, JetBrains Mono |
+| **Backend Focus** | Node.js, Python, Firebase, Django |
+| **Deployment** | Firebase Hosting |
 
 ---
 
-## Deployment
+## 8 Portfolio Ecosystem
 
-| Platform | URL |
-|----------|-----|
-| **GitHub Pages** | [mk-knight23.github.io/04-portfolio-site-v1](https://mk-knight23.github.io/04-portfolio-site-v1/) |
-| **Vercel** | [04-portfolio-backend.vercel.app](https://04-portfolio-backend.vercel.app/) |
-| **Netlify** | [04-portfolio-backend.netlify.app](https://04-portfolio-backend.netlify.app/) |
-| **Render** | [zero4-portfolio-backend.onrender.com](https://zero4-portfolio-backend.onrender.com/) |
+This is **#04 of 8** specialized experiences:
 
-
----
-
-## Local Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/mk-knight23/04-portfolio-backend.git
-
-# Navigate to project
-cd 04-portfolio-backend
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
+| # | Portfolio | Theme | URL |
+|---|-----------|-------|-----|
+| 01 | DevTools | Terminal/CLI | [Live](https://portfolio-devtools.web.app) |
+| 02 | Fullstack | Clean SaaS | [Live](https://mk-knight-fullstack.web.app) |
+| 03 | Frontend | Motion Design | [Live](https://mk-knight-frontend.web.app) |
+| 04 | **Backend** | Editorial | [Live](https://mk-knight-backend.web.app) |
+| 05 | Frontend AI | AI Lab | [Live](https://mk-knight-frontend-ai.web.app) |
+| 06 | Senior Frontend | Swiss Minimal | [Live](https://mk-knight-senior-frontend.web.app) |
+| 07 | Indie SaaS | Startup Style | [Live](https://portfolio-indie-saas.web.app) |
+| 08 | AI Automation | Systems Flow | [Live](https://portfolio-ai-automation.web.app) |
 
 ---
 
-## Contact
+## About Me
 
-- **Email:** [mk.knight970@gmail.com](mailto:mk.knight970@gmail.com)
-- **Phone:** +91 9765490536
-- **GitHub:** [mk-knight23](https://github.com/mk-knight23)
-- **LinkedIn:** [kazi-musharraf-0674871a4](https://www.linkedin.com/in/kazi-musharraf-0674871a4)
-- **Location:** Hyderabad, India
+**Kazi Musharraf** — Backend Systems Architect
 
----
+### Connect
 
-## Additional Features (vNext)
-
-Three focused additions demonstrating backend expertise:
-
-### API Documentation Section
-**Why added:** Backend work is invisible by default. Screenshots don't capture API design quality the way actual documentation does.
-
-**What changed:** Added a dedicated section showing sample API endpoints with proper OpenAPI-style formatting. GET /api/v1/users/:id and POST /api/v1/auth/login with request/response bodies. Shows I understand REST conventions, JSON structure, and proper documentation practices.
-
-### System Architecture Diagram
-**Why added:** Backend is about architecture, not just code. A single diagram conveys data flow better than five paragraphs.
-
-**What changed:** Added a visual architecture section showing Client → API Gateway → Microservices → Data Layer flow. Uses Lucide icons in a clean layout—no complex diagramming library needed. Demonstrates understanding of distributed systems patterns, API gateways, and data layer separation.
-
-### Navigation Updates
-**Why added:** New sections need to be discoverable.
-
-**What changed:** Updated navigation and scroll tracking to include API Docs and Architecture sections. Active section highlighting now works across all sections including the new backend-focused areas.
-
-### Intentionally Rejected: Live API Demos
-I considered making live API calls from the portfolio to demonstrate uptime. Rejected because portfolios should be static and reliable. APIs go down, domains expire, tokens expire. A dead demo in a portfolio is worse than no demo. Screenshots and documentation don't have runtime failures.
-
+- 📧 **Email**: [mk.knight970@gmail.com](mailto:mk.knight970@gmail.com)
+- 💻 **GitHub**: [@mk-knight23](https://github.com/mk-knight23)
+- 💼 **LinkedIn**: [kazi-musharraf](https://www.linkedin.com/in/kazi-musharraf-0674871a4)
+- 🌐 **Portfolio Hub**: [https://www.mkazi.live](https://www.mkazi.live)
 
 ---
 
-*Last Updated: January 31, 2026*
+*Part of the 60 Projects Ecosystem — Built with systems thinking and ☕*
 
----
-
-## 🌐 Live Web Projects (09-16)
-
-View my deployed web applications:
-
-| # | Project | Live URL | Stack |
-|---|---------|----------|-------|
-| 09 | Geographic Explorer | [Live](https://09-web-geographic-explorer.vercel.app) | React 19 + TypeScript + Tailwind |
-| 10 | Time Display | [Live](https://10-web-time-display.vercel.app) | React 19 + TypeScript + Tailwind |
-| 11 | Keyboard Practice | [Live](https://11-web-keyboard-practice.vercel.app) | React 19 + TypeScript + Tailwind |
-| 12 | Editorial Blog | [Live](https://12-web-editorial-blog.vercel.app) | React 19 + TypeScript + Tailwind |
-| 13 | Brutalist Content | [Live](https://13-web-brutalist-content.vercel.app) | React 19 + TypeScript + Tailwind |
-| 14 | AI Research | [Live](https://14-web-ai-research.vercel.app) | React 19 + TypeScript + Tailwind |
-| 15 | Luxury Boutique | [Live](https://15-web-luxury-boutique.vercel.app) | React 19 + TypeScript + Tailwind |
-| 16 | Editorial Layouts | [Live](https://16-web-editorial-layouts.vercel.app) | React 19 + TypeScript + Tailwind |
-
-*All projects verified live on 2026-02-03*
+*Last Updated: February 2026*

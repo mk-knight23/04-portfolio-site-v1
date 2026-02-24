@@ -651,6 +651,301 @@ a:hover {
 }
 
 /* ============================================
+   ECOSYSTEMS SECTION
+   ============================================ */
+
+.ecosystems {
+    background: var(--color-bg-muted);
+    border-top: 1px solid var(--color-border);
+}
+
+.ecosystem {
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.ecosystem:last-child {
+    margin-bottom: 0;
+}
+
+.ecosystem-header {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ecosystem-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.ecosystem-badge {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ecosystem-badge--primary {
+    background: var(--color-text);
+    color: var(--color-text-inverse);
+}
+
+.ecosystem-badge--secondary {
+    background: var(--color-accent);
+    color: var(--color-text-inverse);
+}
+
+.ecosystem-badge--tertiary {
+    background: var(--color-accent-bg);
+    color: var(--color-accent-dark);
+    border: 1px solid var(--color-accent);
+}
+
+.ecosystem-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-bg-muted);
+    border-radius: 4px;
+}
+
+.ecosystem-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+}
+
+.ecosystem-description {
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+}
+
+.ecosystem-grid--vibe,
+.ecosystem-grid--sdk {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.ecosystem-category {
+    background: var(--color-bg-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: var(--space-lg);
+}
+
+.ecosystem-category--wide {
+    grid-column: 1 / -1;
+}
+
+.ecosystem-category-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.ecosystem-category-icon {
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+}
+
+.ecosystem-list {
+    list-style: none;
+}
+
+.ecosystem-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.ecosystem-list li:last-child {
+    border-bottom: none;
+}
+
+.ecosystem-list a {
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.ecosystem-list a:hover {
+    color: var(--color-accent);
+}
+
+.ecosystem-item-type {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.ecosystem-architecture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.architecture-item {
+    padding: var(--space-md);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+
+.architecture-label {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: var(--space-xs);
+}
+
+.architecture-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+/* ============================================
+   CROSS-PORTFOLIO NAVIGATION
+   ============================================ */
+
+.portfolio-nav {
+    background: var(--color-text);
+    color: var(--color-text-inverse);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-nav .section-label {
+    color: var(--color-accent-light);
+}
+
+.portfolio-nav .section-title {
+    color: var(--color-text-inverse);
+}
+
+.portfolio-nav .section-description {
+    color: var(--color-text-muted);
+}
+
+.portfolio-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.portfolio-nav-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.portfolio-nav-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-nav-item--current {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.portfolio-nav-item--current:hover {
+    background: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}
+
+.portfolio-nav-number {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-accent-light);
+    opacity: 0.6;
+    line-height: 1;
+}
+
+.portfolio-nav-item--current .portfolio-nav-number {
+    color: var(--color-text-inverse);
+    opacity: 0.9;
+}
+
+.portfolio-nav-content {
+    flex: 1;
+}
+
+.portfolio-nav-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-inverse);
+    margin-bottom: 2px;
+}
+
+.portfolio-nav-type {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+.portfolio-nav-item--current .portfolio-nav-type {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio-nav-badge {
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: var(--color-text-inverse);
+}
+
+/* ============================================
    SKILLS SECTION
    ============================================ */
 
@@ -998,6 +1293,24 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
+    .ecosystem-grid,
+    .ecosystem-grid--vibe,
+    .ecosystem-grid--sdk {
+        grid-template-columns: 1fr;
+    }
+
+    .ecosystem-category--wide {
+        grid-column: auto;
+    }
+
+    .ecosystem-architecture {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -1050,6 +1363,26 @@ a:hover {
 
     .btn {
         width: 100%;
+    }
+
+    .ecosystem {
+        padding: var(--space-lg);
+    }
+
+    .ecosystem-title {
+        font-size: 1.375rem;
+    }
+
+    .ecosystem-meta {
+        gap: var(--space-xs);
+    }
+
+    .portfolio-nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-nav-item {
+        padding: var(--space-md);
     }
 }
 
