@@ -56,6 +56,90 @@ User Request → API Gateway → Service Layer → Database → Response
 
 ---
 
+## 🏗️ Architecture
+
+### Project Structure
+
+```
+04-portfolio-backend/
+├── public/              # Static HTML files
+│   ├── index.html       # Main landing page
+│   ├── about.html       # About section
+│   ├── projects.html    # Projects showcase
+│   ├── api.html         # API design documentation
+│   ├── systems.html     # Systems architecture
+│   ├── database.html    # Database design
+│   └── contact.html     # Contact page
+├── css/                 # Stylesheets
+│   ├── main.css         # Main stylesheet
+│   ├── typography.css   # Typography styles
+│   ├── editorial.css    # Editorial theme
+│   └── print.css        # Print styles
+├── js/                  # JavaScript (minimal)
+│   └── main.js          # Interaction scripts
+├── docs/                # Technical documentation
+│   ├── api-design.md    # API design principles
+│   ├── database-schema.md # Database schemas
+│   ├── architecture.md  # System architecture
+│   └── deployment.md    # Deployment guides
+├── .github/
+│   └── workflows/       # CI/CD pipelines
+│       ├── ci.yml       # Validation & Lighthouse
+│       └── deploy.yml   # Firebase deployment
+└── README.md            # This file
+```
+
+### Technology Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Structure** | Semantic HTML5 |
+| **Styling** | Custom CSS (Editorial Design System) |
+| **Typography** | Newsreader (serif), JetBrains Mono (code) |
+| **Interaction** | Vanilla JavaScript (minimal) |
+| **Hosting** | Firebase Hosting |
+| **CI/CD** | GitHub Actions (Lighthouse, Firebase Deploy) |
+
+### Key Architectural Principles
+
+- **Editorial Design**: Content-first, readability-focused
+- **Semantic HTML**: Proper structure and accessibility
+- **Performance**: Minimal JavaScript, optimized CSS
+- **Accessibility**: WCAG AA compliant
+- **Progressive Enhancement**: Works without JavaScript
+- **Responsive**: Mobile-first design
+
+### Backend Systems Focus
+
+This portfolio showcases backend expertise through:
+
+```
+API Design → Database Architecture → System Design → DevOps
+    ↓              ↓                   ↓            ↓
+REST/GraphQL    SQL/NoSQL        Microservices   CI/CD
+Authentication   Indexing       Caching        Monitoring
+Rate Limiting   Optimization   Load Balancing  Security
+```
+
+### Technical Documentation
+
+The repository includes detailed documentation:
+
+1. **API Design**: RESTful vs GraphQL, authentication patterns, rate limiting
+2. **Database Schema**: Normalization, indexing strategies, migrations
+3. **System Architecture**: Microservices, event-driven design, scalability
+4. **Deployment**: CI/CD pipelines, monitoring, alerting
+
+### Content Structure
+
+- **API Showcase**: Real API designs with Swagger documentation
+- **Database Designs**: ER diagrams and schema documentation
+- **Case Studies**: Real-world backend challenges and solutions
+- **Architecture Diagrams**: System designs and data flow
+- **Performance Metrics**: Optimization results and benchmarks
+
+---
+
 ## 8 Portfolio Ecosystem
 
 This is **#04 of 8** specialized experiences:
@@ -88,58 +172,4 @@ This is **#04 of 8** specialized experiences:
 
 *Part of the 60 Projects Ecosystem — Built with systems thinking and ☕*
 
-*Last Updated: February 2026*
-
-
-## ✨ Features
-
-This repository has been upgraded with the following features:
-
-1. **Add React.memo for performance** ✅
-2. **Implement custom hooks** ✅
-3. **Add context API for state** ✅
-4. **Implement lazy loading** ✅
-5. **Add error boundaries** ✅
-6. **Create reusable components** ✅
-7. **Add TypeScript types** ✅
-8. **Implement responsive design** ✅
-9. **Add animations with Framer Motion** ✅
-10. **Create unit tests with React Testing Library** ✅
-
----
-
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 📦 Tech Stack
-
-- Modern web framework
-- Optimized for performance
-- Responsive design
-- Accessibility ready
-
-## 🛠️ Installation
-
-```bash
-git clone https://github.com/mk-knight23/04-portfolio-backend.git
-cd 04-portfolio-backend
-npm install
-```
-
-## 📝 License
-
-MIT
-
----
-
-*Last updated: 2026-02-27*
+*Last Updated: 2026-02-28*
